@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Кнопки</h1>
+            <div class="grid">
+                <div class="block">
+                    <button class="normal-button">
+                        Обычная кнопка
+                    </button>
+                    <button class="normal-button" style="font-size: x-large;">
+                        Большая кнопка
+                    </button>
+                    <button class="normal-button" style="--bg-color: var(--success); --hov-color: #087644; color: var(--light)">
+                        Кнопка успех
+                    </button>
+                    <button class="normal-button" style="--bg-color: var(--danger); --hov-color: #cb2433; color: var(--light)">
+                        Кнопка ошибка
+                    </button>
+                    <button class="normal-button">
+                        <img src="image.svg"> Кнопка с картинкой
+                    </button>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="block">
+                    <button class="outline-button">
+                        Контур-кнопка
+                    </button>
+                    <button class="outline-button" style="font-size: x-large;">
+                        Большая кнопка
+                    </button>
+                    <button class="outline-button" style="--color2: var(--light); --hov-color: #087644; color: var(--dark)">
+                        Контур-успех
+                    </button>
+                    <button class="outline-button" style="--color2: var(--light); --hov-color: #cb2433; color: var(--dark)">
+                        Контур-ошибка
+                    </button>
+                    <button class="outline-button">
+                        <img src="image.svg"> Контур с картинкой
+                    </button>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="block">
+                    <button class="fill-button">
+                        Заливка-кнопка
+                    </button>
+                    <button class="fill-button" style="font-size: x-large;">
+                        Большая кнопка
+                    </button>
+                    <button class="fill-button" style="--color2: var(--light); --hov-color: #087644; color: var(--dark)">
+                        Заливка-успех
+                    </button>
+                    <button class="fill-button" style="--color2: var(--light); --hov-color: #cb2433; color: var(--dark)">
+                        Заливка-ошибка
+                    </button>
+                    <button class="fill-button">
+                        <img src="image.svg"> Заливка с картинкой
+                    </button>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="block">
+                    <button class="concave-button">
+                        Кнопка-назад
+                    </button>
+                    <button class="concave-button" style="font-size: x-large;">
+                        Большая кнопка
+                    </button>
+                    <button class="concave-button" style="--bg-color: var(--success); --hov-color: #087644; color: var(--dark)">
+                        Назад-успех
+                    </button>
+                    <button class="concave-button" style="--bg-color: var(--danger); --hov-color: #cb2433; color: var(--dark)">
+                        Назад-ошибка
+                    </button>
+                    <button class="concave-button">
+                        <img src="image.svg"> Назад с картинкой
+                    </button>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="block">
+                    <button class="convex-button">
+                        Кнопка-вперёд
+                    </button>
+                    <button class="convex-button" style="font-size: x-large;">
+                        Большая кнопка
+                    </button>
+                    <button class="convex-button" style="--bg-color: var(--success); --hov-color: #087644; color: var(--dark)">
+                        Вперёд-успех
+                    </button>
+                    <button class="convex-button" style="--bg-color: var(--danger); --hov-color: #cb2433; color: var(--dark)">
+                        Вперёд-ошибка
+                    </button>
+                    <button class="convex-button">
+                        <img src="image.svg"> Вперёд с картинкой
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1>Элементы формы</h1>
+            <div class="grid">
+                <input class="input">
+                <input class="input">
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1>Цвета</h1>
+            <div class="block">
+                <div class="color bg-dark">
+                    dark<br>#1f1f1f
+                </div>
+                <div class="color bg-light">
+                    light<br>#f7fafa
+                </div>
+                <div class="color bg-danger">
+                    danger<br>#dc3544
+                </div>
+                <div class="color bg-warning">
+                    warning<br>#ffc108
+                </div>
+                <div class="color bg-success">
+                    success<br>#198755
+                </div>
+                <div class="color bg-info">
+                    info<br>#0dcbf2
+                </div>
+                <div class="color bg-primary">
+                    primary<br>#0d6efc
+                </div>
+                <div class="color bg-secondary">
+                    secondary<br>#6b757b
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

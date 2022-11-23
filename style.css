@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid > * {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid > .block > * {
+    margin: 15px;
+}
+
+/*colors*/
+.color {
+    margin: 15px;
+    width: 128px;
+    height: 128px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px currentColor solid;
+    text-align: center;
+}
+
+:root {
+    --primary: #0d6efc;
+    --secondary: #6b757b;
+    --success: #198755;
+    --danger: #dc3544;
+    --warning: #ffc108;
+    --info: #0dcbf2;
+    --light: #f7fafa;
+    --dark: #1f1f1f;
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.bg-success {
+    background-color: var(--success);
+    color: var(--light);
+}
+
+.bg-danger {
+    background-color: var(--danger);
+    color: var(--light);
+}
+
+.bg-warning {
+    background-color: var(--warning);
+    color: var(--dark);
+}
+
+.bg-info {
+    background-color: var(--info);
+    color: var(--dark);
+}
+
+.bg-light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/*buttons*/
+/*normal button*/
+.normal-button {
+    --bg-color: #efefef;
+    --hov-color: #dedede;
+    --color: #1f1f1f;
+
+    transition: .25s;
+
+    display: flex;
+    align-items: center;
+
+    padding: .25rem .75rem;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-size: medium;
+}
+
+.normal-button > img {
+    float: left;
+    height: fit-content;
+    margin-right: .5rem;
+}
+
+.normal-button:hover {
+    transition: .25s;
+    background-color: var(--hov-color);
+}
+
+.normal-button:active {
+    filter: brightness(95%)
+}
+
+/*outline button*/
+.outline-button {
+    --color2: #1f1f1f;
+    --hov-color: #ccc;
+    --color: #efefef;
+
+    transition: .25s;
+
+    display: flex;
+    align-items: center;
+
+    padding: .25rem .75rem;
+
+    border-radius: 10px;
+    border: 1px currentColor solid;
+
+    background-color: transparent;
+    color: var(--color2);
+    font-size: medium;
+}
+
+.outline-button > img {
+    float: left;
+    height: fit-content;
+    margin-right: .5rem;
+}
+
+.outline-button:hover {
+    transition: .25s;
+    background-color: var(--hov-color);
+    color: var(--color2) !important;
+    border-color: var(--color2) !important;
+}
+
+.outline-button:active {
+    filter: brightness(95%)
+}
+
+/*outline button*/
+.fill-button {
+    --color2: #1f1f1f;
+    --hov-color: #ccc;
+    --color: #efefef;
+
+    transition: .25s;
+
+    display: flex;
+    align-items: center;
+
+    padding: .25rem .75rem;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: transparent;
+    color: var(--color2);
+    font-size: medium;
+}
+
+.fill-button > img {
+    float: left;
+    height: fit-content;
+    margin-right: .5rem;
+}
+
+.fill-button:hover {
+    transition: .25s;
+    background-color: var(--hov-color);
+    color: var(--color2) !important;
+}
+
+.fill-button:active {
+    filter: brightness(95%)
+}
+
+/*concave button*/
+.concave-button {
+    --bg-color: #efefef;
+    --hov-color: #dedede;
+    --color: #1f1f1f;
+
+    transition: .25s;
+
+    display: flex;
+    align-items: center;
+
+    padding: .25rem .75rem;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-size: medium;
+    will-change: transform;
+}
+
+.concave-button > img {
+    float: left;
+    height: fit-content;
+    margin-right: .5rem;
+}
+
+.concave-button:hover {
+    transition: .25s;
+    background-color: var(--hov-color);
+}
+
+.concave-button:active {
+    filter: brightness(95%);
+    transition: all .175s, transform .125s;
+    transform: scale(0.9, 0.9);
+}
+
+/*convex button*/
+.convex-button {
+    --bg-color: #efefef;
+    --hov-color: #dedede;
+    --color: #1f1f1f;
+
+    transition: .25s;
+
+    display: flex;
+    align-items: center;
+
+    padding: .25rem .75rem;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-size: medium;
+    will-change: transform;
+    transform: none;
+}
+
+.convex-button > img {
+    float: left;
+    height: fit-content;
+    margin-right: .5rem;
+}
+
+.convex-button:hover {
+    transition: .25s;
+    background-color: var(--hov-color);
+}
+
+.convex-button:active {
+    filter: brightness(95%);
+    transition: all .175s, transform .125s;
+    transform: scale(1.1, 1.1);
+}
+
+/*form components*/
+.input {
+    transition: .25s;
+    font-size: large;
+    border-radius: 10px;
+    border: 2px currentColor solid;
+    padding: .25rem .75rem;
+}
+
+.input:focus {
+    transition: .25s;
+    outline: 2px #0d6efcaa solid;
+}
